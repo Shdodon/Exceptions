@@ -1,5 +1,7 @@
 package Homework.algorithms.hw4.Pr;
 
+import java.util.stream.Stream;
+
 public class Program {
     public static void main(String[] args) {
 
@@ -12,13 +14,14 @@ public class Program {
         oldValue = hashMap.put("+79001112235", "QQQQQQQ");
         oldValue = hashMap.put("+79001112236", "ZZZZZZZ");
         oldValue = hashMap.put("+79001112237", "LLLLLLL");
-        oldValue = hashMap.put("+79001112238", "sdfsdf");
-        oldValue = hashMap.put("+79001112239", "ASDASDA");
-        oldValue = hashMap.put("+790011122310", "SFEFR");
-        oldValue = hashMap.put("+790011122311", "EWTRYHTH");
+        oldValue = hashMap.put("+79001112238", "KKKKKKK");
+        oldValue = hashMap.put("+79001112239", "RRRRRRR");
+        oldValue = hashMap.put("+790011122310", "CCCCCC");
+        oldValue = hashMap.put("+790011122311", "ZCZCZCZC");
 
+        for (HashMap.Entity element : hashMap) {
+            System.out.println(element.key + " - " + element.value);
+        }
 
-
-           System.out.println(hashMap);
     }
 }
